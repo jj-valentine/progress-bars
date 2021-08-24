@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Helvetica Neueu";
+  font-size: 40px;
+}
+
+.page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  button {
+    width: 20vw;
+    height: 50px;
+    padding: 0;
+    margin-top: 50px;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid darkgray;
+    background-color: #0f0;
+    animation: rainbow 8s infinite alternate;
+    
+    @keyframes rainbow {
+      0% {
+        filter: hue-rotate(calc(60deg));
+      }
+
+      20% {
+        filter: hue-rotate(calc(120deg));
+      }
+
+      40% {
+        filter: hue-rotate(calc(180deg));
+      }
+
+      60% {
+        filter: hue-rotate(calc(240deg));
+      }
+
+      80% {
+        filter: hue-rotate(calc(300deg));
+      }
+
+      100% {
+        filter: hue-rotate(calc(360deg));
+      }
+    }
+   }
+  
+}
+
+.bars-container {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: wrap;
+  width: 65vw;
+  height: 100%;
+  margin-top: 80px;
+}
