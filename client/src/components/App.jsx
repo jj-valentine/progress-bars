@@ -9,6 +9,8 @@ import ProgressBar from "./ProgressBar/ProgressBar.jsx";
 import "./app.scss";
 
 function App() {
+  const MAX_BARS = 10;
+
   const initialState = {
     buttonHover: false,
     progressBars: null,
@@ -43,7 +45,7 @@ function App() {
   return (
     <StateContext.Provider value={state}>
       <DispatchContext.Provider value={dispatch}>
-        { state.progressBars === null && <ChooseBarsModule /> }
+        { state.progressBars === null && <ChooseBarsModule maxBars={MAX_BARS} /> }
           <div className="page-container">
             <button 
               style={{ backgroundColor: state.buttonHover ? "darkGray" : "#0f0" }}

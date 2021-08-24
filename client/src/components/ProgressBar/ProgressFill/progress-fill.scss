@@ -2,6 +2,6 @@
   height: 100%;
   border-radius: inherit;
   transition: width 0.5s ease;
-  filter: hue-rotate(calc(60deg * var(--n)));
+  filter: hue-rotate(calc(1deg * var(--d) * var(--n)));
 }
 
